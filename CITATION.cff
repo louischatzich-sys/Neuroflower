@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "neuroflower: subject-specific EEG spatial calibration via the spTRIO multi-view mediator"
+message: "If you use this software, please cite the SRAM framework (Chatzicharalampous 2026, DOI below) and this software entry."
+type: software
+authors:
+  - given-names: Louis
+    family-names: Chatzicharalampous
+    email: louischatzic.h@gmail.com
+abstract: >-
+  neuroflower v1.0.0 implements a subject-specific EEG spatial calibration
+  pipeline based on the Field-Seed Reconstruction Framework (Chatzicharalampous,
+  2026).  A multi-view mediator unifies three independent views of an SRAM-
+  reconstructed signed topography — field, inverse, and transport — into a
+  single non-overlapping channel selection (spTRIO).  Three orthogonal
+  deviation metrics (basin shift, topographic extremum displacement, Jaccard
+  distance) triangulate within-subject state change at three spatial scales.
+keywords:
+  - eeg
+  - spatial-calibration
+  - sptrio
+  - field-seed-reconstruction
+  - sram
+  - topomap
+  - subject-specific-template
+  - basin-shift
+  - jaccard-distance
+  - brain-computer-interface
+version: "1.0.0"
+date-released: "2026-06-22"
+license: MIT
+repository-code: "https://github.com/<your-username>/neuroflower"
+url: "https://github.com/<your-username>/neuroflower"
+identifiers:
+  - description: "Underlying Field-Seed Reconstruction Framework and SRAM system"
+    type: doi
+    value: "10.5281/ZENODO.20280107"
+preferred-citation:
+  type: software
+  title: >-
+    Field-Seed Reconstruction Framework and SRAM System: A Computational Model
+    of Emergent Structure with Clinical Applications
+  authors:
+    - given-names: Louis
+      family-names: Chatzicharalampous
+  year: 2026
+  doi: "10.5281/ZENODO.20280107"
+  url: "https://doi.org/10.5281/ZENODO.20280107"

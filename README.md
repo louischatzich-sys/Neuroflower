@@ -205,4 +205,4 @@ If you use this software, please cite both:
 
 ## License
 
-BSD - 3 — see [`LICENSE`](LICENSE).
+MIT — see [`LICENSE`](LICENSE).
