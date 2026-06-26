@@ -29,5 +29,14 @@ def welch_psd(x, fs, nperseg=None, noverlap=None):
     return np.fft.rfftfreq(nperseg, 1.0/fs), psd
 
 def band_power(freqs, psd, lo, hi):
+    """Trapezoidal-rule integration of PSD over [lo, hi].
+
+    Hand-implemented rather than calling np.trapz/np.trapezoid so the code
+    works across NumPy 1.x and 2.x without an alias shim (np.trapz was
+    renamed to np.trapezoid in NumPy 2.0 and removed in 2.1+).
+    """
     m = (freqs >= lo) & (freqs <= hi)
-    return float(np.trapz(psd[m], freqs[m])) if np.any(m) else 0.0
+    if not np.any(m): return 0.0
+    f, p = freqs[m], psd[m]
+    if f.size < 2: return 0.0
+    return float(0.5 * np.sum((f[1:] - f[:-1]) * (p[1:] + p[:-1])))
