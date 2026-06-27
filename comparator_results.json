@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-06-27T08:12:51",
+  "subject": "S002R01",
+  "edf_path": "/Users/LouisCh/Downloads/Neuroflower/Neuroflower/S002R01.edf",
+  "protocol_version": "1.0",
+  "ica_settings": {
+    "max_iter": 1000,
+    "tol": 1e-05,
+    "random_state": 42,
+    "whiten": "unit-variance"
+  },
+  "grid_size": 180,
+  "rbf_sigma_reference": 0.13,
+  "rbf_sigma_subset": 0.18,
+  "results": [
+    {
+      "band": "delta",
+      "K": 32,
+      "sptrio_r": 0.9937196690698659,
+      "ica_r": 0.995736338707616,
+      "raw_r": 0.9957824625510793,
+      "delta_sptrio_minus_ica": -0.002016669637750157,
+      "best_ic": 49,
+      "best_ic_topo_r": 0.9631071034940001,
+      "ica_converged": false,
+      "ica_n_iter": 1000
+    },
+    {
+      "band": "theta",
+      "K": 34,
+      "sptrio_r": 0.9871974294334747,
+      "ica_r": 0.9910094150622234,
+      "raw_r": 0.9867581525237964,
+      "delta_sptrio_minus_ica": -0.0038119856287487375,
+      "best_ic": 49,
+      "best_ic_topo_r": 0.9533441411123965,
+      "ica_converged": false,
+      "ica_n_iter": 1000
+    },
+    {
+      "band": "alpha",
+      "K": 34,
+      "sptrio_r": 0.9375822007124026,
+      "ica_r": 0.9597596399021583,
+      "raw_r": 0.8281830015505334,
+      "delta_sptrio_minus_ica": -0.022177439189755677,
+      "best_ic": 27,
+      "best_ic_topo_r": 0.7486225727583441,
+      "ica_converged": false,
+      "ica_n_iter": 1000
+    },
+    {
+      "band": "beta",
+      "K": 34,
+      "sptrio_r": 0.7357120443456399,
+      "ica_r": 0.9143755659083689,
+      "raw_r": 0.7421132489147841,
+      "delta_sptrio_minus_ica": -0.17866352156272902,
+      "best_ic": 16,
+      "best_ic_topo_r": 0.887082675398464,
+      "ica_converged": false,
+      "ica_n_iter": 1000
+    },
+    {
+      "band": "gamma",
+      "K": 32,
+      "sptrio_r": 0.9610939744189336,
+      "ica_r": 0.9359272027317194,
+      "raw_r": 0.9610939744189336,
+      "delta_sptrio_minus_ica": 0.025166771687214262,
+      "best_ic": 16,
+      "best_ic_topo_r": 0.9423465086005498,
+      "ica_converged": false,
+      "ica_n_iter": 1000
+    }
+  ]
+}
